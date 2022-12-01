@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+html里面head，body并列
+head下面有meta，tilte，script
+body下面有div，h1-h6，p
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script>
+        // getElementById类似findViewById,对应的文本则是innerHTML
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>我的第一个 JavaScript 程序</h1>
+    <p id="demo">这是一个段落</p>
+    <!-- button的type有button/submit/reset,点击事件是onclick -->
+    <button type="button" onclick="displayDate()">显示日期</button>
+    <form action="demo-form.php" method="get">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+    </form>
+
+</body>
+
+</html>
