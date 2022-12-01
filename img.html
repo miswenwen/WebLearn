@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+
+<body>
+
+    <script>
+        function changeImage() {
+            element = document.getElementById('myimage');
+            // match等于java里的contain
+            if (element.src.match("aaa")) {
+                element.src = "../JsLearn/bbb.jpeg";
+            }
+            else {
+                element.src = "../JsLearn/aaa.jpeg";
+            }
+        }
+    </script>
+    <!-- 注意src属性，整体使用和android的ImageButton类似,用绝对/相对路径/网络的url都可以，alt是图片挂了的时候的提示-->
+    <img id="myimage" onclick="changeImage()" src="C:\Users\liuqipeng\Desktop\work\JsLearn\aaa.jpeg" width="100"
+        height="100" />
+    <img id="myimage2" src="not_exist.jpeg" width="100" height="100" alt="图片挂了" />
+
+</body>
+
+</html>
