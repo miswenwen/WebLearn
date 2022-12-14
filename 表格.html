@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table
+    tr:table row 一行
+    td:table data 单个单元格数据 
+    默认是没有边框线的-->
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>刘知有</td>
+            <td>100非常好</td>
+            <td>非常好</td>
+        </tr>
+    </table>
+    <!-- 可以直接border，也可以border给值 -->
+    <table border>
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>刘知有</td>
+            <td>100非常好</td>
+            <td>非常好</td>
+        </tr>
+    </table>
+    <!-- 可以设置宽高，宽高vscode在这里不自动提示，因为一般是css里面写的宽高 -->
+    <table border="20" width="500">
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>刘知有</td>
+            <td>100非常好</td>
+            <td>非常好</td>
+        </tr>
+    </table>
+    <!-- th:table head 表头单元格，字体默认加测并居中显示
+    caption：表格大的标题 -->
+    <table border>
+        <caption>
+            <b>学生成绩单</b>
+        </caption>
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</th>
+        </tr>
+        <tr>
+            <td>刘知有</td>
+            <td>100非常好</td>
+            <td>非常好</td>
+        </tr>
+    </table>
+</body>
+
+</html>
