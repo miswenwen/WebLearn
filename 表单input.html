@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- input
+    type取值有text/password/radio/checkbox/file/submit/reset/button
+    ide提示可以用input:xxx这种写法，attr提示的会比较完整，比直接input，type里面去选类型要好用点 -->
+    <!-- placeholder其实就是lint -->
+    <input type="text" placeholder="输入信息"><br>
+    密码<input type="password"><br>
+    <!-- 用name分组，这样多个radio是一组，只能选中一个  checked默认选中,加单词就行-->
+    单选1<input type="radio" name="aaa" checked><br>
+    单选2<input type="radio" name="aaa"><br>
+    多选1<input type="checkbox"><br>
+    多选2<input type="checkbox"><br>
+    <!-- 要上传多个要加multiple参数 -->
+    <input type="file" multiple><br>
+    <!-- 想要submit和reset生效，要用form包起来，submit可以提交到form里action对应url里面 -->
+    <form action="">
+        用户名<input type="text"><br>
+        密码<input type="password"><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <!-- value是button的文本显示 -->
+    <input type="button" value="这是按钮"><br>
+</body>
+
+</html>
