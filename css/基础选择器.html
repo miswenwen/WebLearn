@@ -13,10 +13,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 标签选择器:标签名命名的，选中所有该名字的标签*/
+        p {
+            color: red;
+        }
+
+        /* 类选择器  这里是.+className,实际用的地方搞个class属性
+            类名可以重复，也就是一个类选择器可以选中多个标签
+            一个标签可以有多个类名
+        */
+        .blue {
+            color: blue;
+        }
+
+        .size {
+            font-size: 50px;
+        }
+
+        /* id选择器：通常是配合js来找标签的
+            每个标签都有id属性
+            一个页面中id是唯一的，但通常来说最好是全局唯一比较好，和android的xml里的id是一样的
+            注意这里是井号#
+        */
+        #test {
+            color: aqua;
+        }
+
+        /* 通配符选择器 
+            一般是用来remove标签默认的margin和padding
+            讲道理通配符选择器应该支持正则吧？或者类似String的startsWith，endsWith
+        */
+        * {
+            color: yellow
+        }
+    </style>
 </head>
 
 <body>
-
+    <p>aaaa</p>
+    <!-- 一个标签可以有多个类名 -->
+    <p class="blue size">bbbb</p>
+    <div class="blue">ssss</div>
+    <div id="test">test</div>
+    <span>tttt</span>
+    <dir>divvvvvvvv</dir>
 </body>
 
 </html>
