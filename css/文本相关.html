@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 首行缩进两个字  */
+        p {
+            /* 取值px,或者em(一个字的大小，也就是相对长度单位) */
+            text-indent: 2em;
+        }
+
+        /* text-align:内容对齐(文字，图片，等等)，left,center,right */
+        h1 {
+            text-align: center;
+        }
+
+        /* img放在body里，所以body改居中即可，但这样body里所有东西都居中了，我们用div */
+        /* body {
+            text-align: center;
+        } */
+        div {
+            text-align: right;
+        }
+
+        /* 文本修饰 */
+        #p1 {
+            text-decoration: none;
+        }
+
+        #p2 {
+            /* 下划线 */
+            text-decoration: underline;
+        }
+
+        #p3 {
+            /* 删除线 */
+            text-decoration: line-through;
+        }
+
+        #p4 {
+            /* 上划线 几乎不用*/
+            text-decoration: overline;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>你好吗</h1>
+    <p>使用vue框架, 版本 "vue": "^2.6.12", 使用Ant Design Vue 组件库，版本  "ant-design-vue": "^1.7.2",使用axios 请求，使用
+        vuex管理数据，使用vue-router管理路由。
+        本项目默认你有一定的 Vue 基础,如果你对这些还不熟悉，我们建议你先查阅相关文档 Vue、Ant Design Vue，提供了以下的典型模板，并据此构建了一套基于 Ant Design
+        Vue 的中后台管理控制台的脚手架。</p>
+    <img src="../aaa.jpeg" width="100" height="100" />
+    <div>
+        <img src="../aaa.jpeg" width="100" height="100" />
+    </div>
+    <p id="p1">aaa</p>
+    <p id="p2">bbb</p>
+    <p id="p3">ccc</p>
+    <p id="p4">ddd</p>
+
+</body>
+
+</html>
