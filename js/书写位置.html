@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 行内，内嵌，外部 js -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 内嵌式是页面跑起来就执行了，body里还没渲染呢，也对，因为head在body前面嘛 -->
+  <!-- <script>
+    alert('ccc');
+  </script> -->
+  <!-- 外部式写法 -->
+  <script src="my.js"></script>
+</head>
+
+<body>
+  <!-- 行内写法 -->
+  <input type="button" value="aaa" onclick="alert('bbb')">
+</body>
+
+</html>
